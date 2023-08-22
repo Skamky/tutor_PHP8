@@ -12,7 +12,7 @@ class  ShopProduct
 	// листинг 3.13
 	public function getProducer()
 	{
-		return $this->producerFirstName." ".$this->producerMainName;
+		return $this->producerFirstName . " " . $this->producerMainName;
 	}
 }
 
@@ -38,4 +38,12 @@ $product2->title = "Ревизор";
 // листинг 3.7 (счиатаеться плохим кодом)
 $product1->arbitrayAddition = "Дополнительный параметр";
 
+//листинг 3.14
+$product1 = new ShopProduct();
+$product1->title 			= 'Собачье сердце';
+$product1->producerMainName = "Булгаков";
+$product1->producerFirstName= "Михаил";
+$product1->price 			= 5.99;
+
+print "\n\nАвтор: {$product1->getProducer()}\n"
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 //литсинг  3.1
-class  ShopProduct
+class  ShopProduct_0
 {
 	// лисинг 3.4
 	public $title = "Стандартный товар";
@@ -17,20 +17,20 @@ class  ShopProduct
 }
 
 //листинг 3.2
-$product1 = new ShopProduct();
-$product2 = new ShopProduct();
+$product1 = new ShopProduct_0();
+$product2 = new ShopProduct_0();
 
 //// листинг 3.3
 //var_dump($product1);
 //var_dump($product2);
 
 // листинг 3.5
-$product1 = new ShopProduct();
+$product1 = new ShopProduct_0();
 print $product1->title;
 
 // листинг 3.6
-$product1 = new ShopProduct();
-$product2 = new ShopProduct();
+$product1 = new ShopProduct_0();
+$product2 = new ShopProduct_0();
 
 $product1->title = "Собачье сердце";
 $product2->title = "Ревизор";
@@ -39,7 +39,7 @@ $product2->title = "Ревизор";
 $product1->arbitrayAddition = "Дополнительный параметр";
 
 //листинг 3.14
-$product1 = new ShopProduct();
+$product1 = new ShopProduct_0();
 $product1->title 			= 'Собачье сердце';
 $product1->producerMainName = "Булгаков";
 $product1->producerFirstName= "Михаил";

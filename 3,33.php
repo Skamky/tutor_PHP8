@@ -16,4 +16,6 @@ class ShopProduct
 }
 //листинг 3.34
 // Не срабоатает!
-$product = new ShopProduct("название","Имя","Фамилия ", []);
+//$product = new ShopProduct("название","Имя","Фамилия ", []);
+
+//листинг 3,36

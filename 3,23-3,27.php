@@ -1,4 +1,7 @@
 <?php
+//листинг 3.38
+declare(strict_types=1);
+
 //листинг 3.23
 
 class  AdressManager
@@ -10,7 +13,7 @@ class  AdressManager
 	 * @param $resolve Boolean Преоброзовать адрес?
 	 * @return void
 	 */
-	public function outputAddresses($resolve)
+	public function outputAddresses(bool $resolve) // 3.36
 	{
 		//листинг 3.27 (использовалась до версии php7
 		if (!is_bool($resolve)){
@@ -36,3 +39,8 @@ class  AdressManager
 $settings = simplexml_load_file(__DIR__."/resolve.xml");
 $manager = new AdressManager();
 $manager->outputAddresses((string)$settings->resolvedomains);
+
+//листинг 3,37
+$manager->outputAddresses("false"); //будет преобразованно в "false"===true
+// листинг 3,38
+$manager->outputAddresses("false"); //будет преобразованно в "false"===true (см первую строку)

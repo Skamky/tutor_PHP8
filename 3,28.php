@@ -4,8 +4,12 @@ include "3,17.php";
 class ShopProductWriter
 {
 	//листинг 3.30
-	public function write(ShopProduct $shopProduct)
+	// Листинг 5.56
+	public function write($shopProduct):void
 	{
+		if ((!$shopProduct instanceof CDProduct)&&
+		!($shopProduct instanceof BookProduct))
+		{die("Передан неверный тип данных");}
 		$str = $shopProduct->title.": ".$shopProduct->getProducer()." (".$shopProduct->price. ")\n";
 		print $str;
 	}

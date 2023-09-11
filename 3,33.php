@@ -21,14 +21,16 @@ class ShopProduct
 		$this->playLength = $playLength;
 	}
 
-	public function getNumberOfPages():int
+	public function getNumberOfPages(): int
 	{
 		return $this->numPages;
 	}
-	public function getProducer():string
+
+	public function getProducer(): string
 	{
 		return $this->producerFirstName . " " . $this->producerMainName;
 	}
+
 	//3.46
 	public function setShopProduct(ShopProduct|false $product)
 	{
@@ -53,6 +55,18 @@ class ShopProduct
 		$this->discount = $num;
 	}
 
+	//3,53
+	public function getSummaryLine(): string
+	{
+		$base = "{$this->title} ({$this->producerMainName}, ";
+		$base .= "{$this->producerFirstName}";
+		if ($this->type == 'book') {
+			$base .= ":{$this->numPages} стр";
+		} elseif ($this->type == 'cd') {
+			$base .= ": Время звучания - {$this->playLength}";
+		}
+		return $base;
+	}
 }
 
 //листинг 3.34

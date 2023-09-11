@@ -3,8 +3,8 @@
 //3.40
 class Storage
 {
-	//3,43
-	public function add(string $key ,string|bool $value)
+	//3,44
+	public function add(string $key ,string|bool|null $value)
 	{
 
 

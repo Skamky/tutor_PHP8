@@ -13,6 +13,12 @@ class ShopProduct
 		$this->producerMainName=$mainName;
 		$this->price=$price;
 	}
+
+	//3.45
+	public function setShopProduct(ShopProduct|null $product)
+	{
+		//действия с $product
+	}
 }
 //листинг 3.34
 // Не срабоатает!

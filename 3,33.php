@@ -19,6 +19,22 @@ class ShopProduct
 	{
 		//действия с $product
 	}
+	//3.48
+	public function getPlayLength():int
+	{
+		return $this->playLength;
+	}
+	// 3.49
+	public function getPrice():int|float
+	{
+		return ($this->price - $this->discount);
+	}
+	// 3.50
+	public function srtDiscount(int|float $num):void
+	{
+		$this->discount=$num;
+	}
+
 }
 //листинг 3.34
 // Не срабоатает!

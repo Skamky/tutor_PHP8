@@ -3,9 +3,15 @@
 //3.40
 class Storage
 {
-	//3,41
-	public function add(string $key ,mixed $value)
+	//3,42
+	public function add(string $key , $value)
 	{
+		if (!is_bool($value) && !is_string($value))
+		{
+			error_log ("требуется тип string или bool, а не ".gettype($value));
+			return false;
+		}
+
 		//действия с $key и $value
 	}
 }

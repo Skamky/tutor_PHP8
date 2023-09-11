@@ -14,8 +14,8 @@ class ShopProduct
 		$this->price=$price;
 	}
 
-	//3.45
-	public function setShopProduct(ShopProduct|null $product)
+	//3.46
+	public function setShopProduct(ShopProduct|false $product)
 	{
 		//действия с $product
 	}

@@ -1,6 +1,7 @@
 <?php
 
 //литсинг  3.1
+namespace Chapter3;
 class  ShopProduct_0
 {
 	// лисинг 3.4
@@ -39,11 +40,11 @@ $product2->title = "Ревизор";
 $product1->arbitrayAddition = "Дополнительный параметр";
 
 //листинг 3.14
-$product1 = new ShopProduct_0();
-$product1->title 			= 'Собачье сердце';
-$product1->producerMainName = "Булгаков";
-$product1->producerFirstName= "Михаил";
-$product1->price 			= 5.99;
+$product1                    = new ShopProduct_0();
+$product1->title             = 'Собачье сердце';
+$product1->producerMainName  = "Булгаков";
+$product1->producerFirstName = "Михаил";
+$product1->price             = 5.99;
 
 print "\n\nАвтор: {$product1->getProducer()}\n"
 ?>

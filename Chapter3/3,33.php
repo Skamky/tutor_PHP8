@@ -32,7 +32,7 @@ class ShopProduct
 	}
 
 	//3.46
-	public function setShopProduct(ShopProduct|false $product)
+	public function setShopProduct(Chapter3\ShopProduct|false $product)
 	{
 		//действия с $product
 	}
@@ -76,8 +76,8 @@ class ShopProduct
 //листинг 3,36
 
 //листинг 3.51
-$product1 = new ShopProduct("Собачье сердце", "Михаил", "Булгаков", 5.99);
-$product2 = new ShopProduct("Классическая музыка. Лучшее", "Антонио", "Вивальди", 10.99);
+$product1 = new Chapter3\ShopProduct("Собачье сердце", "Михаил", "Булгаков", 5.99);
+$product2 = new Chapter3\ShopProduct("Классическая музыка. Лучшее", "Антонио", "Вивальди", 10.99);
 
 print "Автор: " . $product1->getProducer() . "\n";
 print "Композитор: " . $product1->getProducer() . "\n";
